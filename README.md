@@ -51,3 +51,4 @@ Este projeto está em desenvolvimento com as seguintes tecnologias:
 - [Vite](https://vitejs.dev/)
 - [ReactJS](https://reactjs.org/)
 - [TailwindCSS](https://tailwindcss.com/)
+- [PhosphorIcons](https://phosphoricons.com/)
