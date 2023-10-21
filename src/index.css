@@ -10,6 +10,15 @@
 }
 
 @layer components {
+  .design-link a:hover {
+    @apply border-b-4 border-design-primary pb-3 text-design-third;
+  }
+
+  .icon {
+    height: 1.5rem;
+    width: 1.5rem;
+  }
+
   .design-text1 {
     font-size: 0.75rem;
     font-weight: 400;
