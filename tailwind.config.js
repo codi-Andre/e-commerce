@@ -5,6 +5,92 @@ export default {
     container: {
       center: true
     },
+    fontSize: {
+      text1: [
+        "0.75rem",
+        {
+          lineHeight: "1rem",
+          fontWeight: "400"
+        }
+      ],
+      text2: [
+        "0.75rem",
+        {
+          lineHeight: "1rem",
+          fontWeight: "500"
+        }
+      ],
+      text3: [
+        "1rem",
+        {
+          lineHeight: "1.25rem",
+          fontWeight: "400"
+        }
+      ],
+      text4: [
+        "1rem",
+        {
+          lineHeight: "1.25rem",
+          fontWeight: "500"
+        }
+      ],
+      text5: [
+        "0.875rem",
+        {
+          lineHeight: "1.125rem",
+          fontWeight: "500"
+        }
+      ],
+      text6: [
+        "0.875rem",
+        {
+          lineHeight: "1.5rem",
+          fontWeight: "400"
+        }
+      ],
+      title1: [
+        "0.875rem",
+        {
+          lineHeight: "1.125rem",
+          fontWeight: "500"
+        }
+      ],
+      title2: [
+        "1rem",
+        {
+          lineHeight: "1.25rem",
+          fontWeight: "500"
+        }
+      ],
+      title3: [
+        "1.125rem",
+        {
+          lineHeight: "1.625rem",
+          fontWeight: "500"
+        }
+      ],
+      title4: [
+        "1.25rem",
+        {
+          lineHeight: "1.5rem",
+          fontWeight: "600"
+        }
+      ],
+      title5: [
+        "1.5rem",
+        {
+          lineHeight: "1.75rem",
+          fontWeight: "600"
+        }
+      ],
+      title6: [
+        "1.75rem",
+        {
+          lineHeight: "2rem",
+          fontWeight: "600"
+        }
+      ]
+    },
     extend: {
       colors: {
         design: {

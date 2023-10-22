@@ -7,88 +7,24 @@
     font-family: "Poppins", sans-serif;
     scroll-behavior: smooth;
   }
+
+  a:hover,
+  a:focus,
+  a:active {
+    @apply text-design-third;
+  }
 }
 
 @layer components {
-  .design-link a:hover {
-    @apply border-b-4 border-design-primary pb-3 text-design-third;
+  .design-link a:hover,
+  .design-link a:focus,
+  .design-link a:active {
+    @apply border-b-4 border-design-primary pb-3;
   }
 
   .icon {
     height: 1.5rem;
     width: 1.5rem;
-  }
-
-  .design-text1 {
-    font-size: 0.75rem;
-    font-weight: 400;
-    line-height: 1rem;
-  }
-
-  .design-text2 {
-    font-size: 0.75rem;
-    font-weight: 500;
-    line-height: 1rem;
-  }
-
-  .design-text3 {
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.25rem;
-  }
-
-  .design-text4 {
-    font-size: 1rem;
-    font-weight: 500;
-    line-height: 1.25rem;
-  }
-
-  .design-text5 {
-    font-size: 0.875rem;
-    font-weight: 500;
-    line-height: 1.125rem;
-  }
-
-  .design-text6 {
-    font-size: 0.875rem;
-    font-weight: 400;
-    line-height: 1.5rem;
-  }
-
-  .design-title1 {
-    font-size: 0.875rem;
-    font-weight: 500;
-    line-height: 1.125rem;
-  }
-
-  .design-title2 {
-    font-size: 1rem;
-    font-weight: 500;
-    line-height: 1.25rem;
-  }
-
-  .design-title3 {
-    font-size: 1.125rem;
-    font-weight: 500;
-    line-height: 1.625rem;
-  }
-
-  .design-title4 {
-    font-size: 1.25rem;
-    font-weight: 600;
-    line-height: 1.5rem;
-  }
-
-  .design-title5 {
-    font-size: 1.5rem;
-    font-weight: 600;
-    line-height: 1.75rem;
-  }
-
-  .design-title6 {
-    font-size: 1.75rem;
-    font-weight: 600;
-    line-height: 2rem;
   }
 
   .design-none {
