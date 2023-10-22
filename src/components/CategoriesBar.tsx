@@ -1,6 +1,11 @@
 import sortIcon from "../assets/icons/sort.svg"
+import { Categories } from "../entities/categories"
 
-export function CategoriesBar() {
+interface CategoriesBarProps {
+  categoriesList?: Categories[]
+}
+
+export function CategoriesBar({ categoriesList }: CategoriesBarProps) {
   return (
     <div className="2xl:w-full">
       <button
@@ -10,28 +15,16 @@ export function CategoriesBar() {
         <img className="icon" src={sortIcon} alt="" />
       </button>
 
-      <ul className="design-text6 design-link hidden flex-1 gap-12 2xl:flex">
-        <li>
-          <a href="#">Jewelry & Accessories</a>
-        </li>
-        <li>
-          <a href="#">Clothing & shoes</a>
-        </li>
-        <li>
-          <a href="#">Home & living</a>
-        </li>
-        <li>
-          <a href="#">Wedding & party</a>
-        </li>
-        <li>
-          <a href="#">Toys & entertainment</a>
-        </li>
-        <li>
-          <a href="#">Art & collectibles</a>
-        </li>
-        <li>
-          <a href="#">Craft supplies & tools</a>
-        </li>
+      <ul className="design-link hidden gap-12 text-text6 2xl:flex">
+        {categoriesList ? (
+          categoriesList.map((item) => (
+            <li key={item.name}>
+              <a href={item.link}>{item.name}</a>
+            </li>
+          ))
+        ) : (
+          <li>No categories found.</li>
+        )}
       </ul>
     </div>
   )

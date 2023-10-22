@@ -5,7 +5,7 @@ export function AccountBar() {
   return (
     <div className="flex items-center gap-4 lg:gap-6">
       <button
-        className="design-text2 hidden rounded-full bg-design-primary px-7 
+        className="text-text2 hidden rounded-full bg-design-primary px-7 
       py-4 text-white lg:inline-block"
       >
         Help
@@ -14,7 +14,7 @@ export function AccountBar() {
       <button className="flex gap-2">
         <img className="icon" src={userIcon} alt="" />
 
-        <span className="design-text6 sr-only lg:not-sr-only">Account</span>
+        <span className="text-text6 sr-only lg:not-sr-only">Account</span>
       </button>
 
       <button className=" flex gap-2">
@@ -23,15 +23,15 @@ export function AccountBar() {
 
           <span
             aria-hidden
-            className="icon design-text1 absolute -right-3 -top-3 flex
-          items-center justify-center rounded-full bg-design-primary text-white 
-          lg:-top-5 2xl:-top-6"
+            className="icon text-text1 absolute -right-3 -top-3 flex
+           items-center justify-center rounded-full bg-design-primary 
+          text-white lg:-top-5 2xl:-top-6"
           >
             16
           </span>
         </div>
 
-        <span className="design-text6 sr-only lg:not-sr-only">Shopping</span>
+        <span className="text-text6 sr-only lg:not-sr-only">Shopping</span>
       </button>
     </div>
   )
