@@ -1,7 +1,7 @@
 import logoIcon from "../assets/logo.svg"
 import { AccountBar } from "./AccountBar"
 import { CategoriesBar } from "./CategoriesBar"
-import { CustomSelect } from "./CustomSelect"
+import { CategoriesFilter } from "./CategoriesFilter"
 import { SearchBar } from "./SearchBar"
 
 const categoriesList = [
@@ -27,7 +27,7 @@ export function Header() {
           />
 
           <SearchBar
-            select={<CustomSelect categoriesList={categoriesList} />}
+            select={<CategoriesFilter categoriesList={categoriesList} />}
           />
 
           <AccountBar />
@@ -38,7 +38,7 @@ export function Header() {
 
           <SearchBar
             mobile
-            select={<CustomSelect categoriesList={categoriesList} />}
+            select={<CategoriesFilter categoriesList={categoriesList} />}
           />
         </div>
       </header>
