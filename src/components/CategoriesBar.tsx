@@ -7,7 +7,7 @@ interface CategoriesBarProps {
 
 export function CategoriesBar({ categoriesList }: CategoriesBarProps) {
   return (
-    <div className="2xl:w-full">
+    <nav className="2xl:w-full">
       <button
         className="rounded-full bg-white p-3 text-center lg:px-8 2xl:hidden"
         aria-label="categories menu"
@@ -26,6 +26,6 @@ export function CategoriesBar({ categoriesList }: CategoriesBarProps) {
           <li>No categories found.</li>
         )}
       </ul>
-    </div>
+    </nav>
   )
 }

@@ -113,6 +113,22 @@ export default {
           background: "#FDFDFD",
           "soft-background": "#FFF9F3",
           "gray-background": "#F5F6F8"
+        },
+        cards: {
+          1: "#D3FBD9",
+          2: "#FFE4BD",
+          3: "#D9ABFD",
+          4: "#FDF0AB",
+          5: "#FBF7D3"
+        },
+        palette: {
+          green: "#7CB93E",
+          skyBlue: "#33ABC6",
+          lightGreen: "#1CCD8D",
+          blue: "#3F65EA",
+          pink: "#F64A69",
+          purple: "#A635EC",
+          orange: "#F9A85D"
         }
       }
     }
