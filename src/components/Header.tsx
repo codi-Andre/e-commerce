@@ -18,7 +18,7 @@ const categoriesList = [
 export function Header() {
   return (
     <div className="bg-design-soft-background">
-      <header className="container px-4 pb-6 pr-6 pt-8 lg:px-6 lg:pt-7">
+      <header className="container px-4 pb-6 pt-8 lg:px-6 lg:pt-7">
         <div className="flex justify-between pr-3 2xl:gap-6">
           <img
             className="h-7 w-32 lg:h-12 lg:w-48"

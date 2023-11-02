@@ -92,6 +92,9 @@ export default {
       ]
     },
     extend: {
+      screens: {
+        "2xl": "1400px"
+      },
       colors: {
         design: {
           primary: "#EB6D20",
