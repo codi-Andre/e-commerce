@@ -6,9 +6,10 @@ import clothingImg from "../assets/categories-images/clothing.jpeg"
 import homeImg from "../assets/categories-images/home.jpeg"
 import chairImg from "../assets/productImages/chair.png"
 import lambaderImg from "../assets/productImages/lambader.png"
-import pillowImg from "../assets/productImages/pillow.png"
+import pillow1Img from "../assets/productImages/pillow.png"
 import sofaImg from "../assets/productImages/sofa.png"
 import { CategoryCard } from "./CategoryCard"
+import { CategoryGallery } from "./CategoryGallery"
 import { ColorPalette } from "./ColorPalette"
 import { CommunityCard } from "./CommunityCard"
 import { DotsNav } from "./DotsNav"
@@ -16,9 +17,9 @@ import { ProductCard } from "./ProductCard"
 
 export function Main() {
   return (
-    <main className="">
+    <main className="from-design-gray-background from-[400px] to-white to-[401px] pt-6 2xl:bg-gradient-to-b">
       <section className="container">
-        <div className="mx-4 mb-10 mt-6 flex flex-col gap-6 md:mx-6 lg:flex-row">
+        <div className="mx-4 mb-10 flex flex-col gap-6 md:mx-6 lg:flex-row">
           <CategoryCard imagePath={clothingImg} title="Clothing & shoes" />
 
           <CategoryCard imagePath={homeImg} title="Home & living" />
@@ -62,7 +63,7 @@ export function Main() {
 
         <div className="hidden rounded-md bg-cards-4 xl:block ">
           <ProductCard
-            imgPath={pillowImg}
+            imgPath={pillow1Img}
             description="Lace Punch Needle Pillow Covers with invisible zipper, 16*16 inches"
             price="43,23 $"
             availableColors={
@@ -79,10 +80,10 @@ export function Main() {
 
       <section
         className="container mb-6 flex flex-col items-center justify-center
-      px-4 md:flex-row md:gap-6"
+      px-4 md:flex-row md:gap-6 md:px-6"
       >
         <CommunityCard imgPath={abstractArt1}>
-          <h4 className="mb-4 text-center text-text5">
+          <h4 className="mb-4 text-center text-text5 md:text-text4">
             A community
             <br /> doing good
           </h4>
@@ -94,7 +95,7 @@ export function Main() {
         </CommunityCard>
 
         <CommunityCard screen="md" imgPath={abstractArt2}>
-          <h4 className="mb-4 text-center text-text5">
+          <h4 className="mb-4 text-center text-text5 md:text-text4">
             Support independent
             <br /> creators
           </h4>
@@ -106,7 +107,7 @@ export function Main() {
         </CommunityCard>
 
         <CommunityCard screen="lg" imgPath={abstractArt3}>
-          <h4 className="mb-4 text-center text-text5">
+          <h4 className="mb-4 text-center text-text5 md:text-text4">
             Peace
             <br /> of mind
           </h4>
@@ -116,6 +117,20 @@ export function Main() {
             <br /> of our dedicated team.
           </p>
         </CommunityCard>
+
+        <DotsNav
+          size="sm"
+          accessibilityCaption={["slide1", "slide2", "slide3"]}
+        />
+      </section>
+      <section className="container mb-6 px-4 md:px-6">
+        <h2 className="mb-2 text-title2">
+          Find things you'll love.
+          <br className="md:hidden" /> Support independent sellers.
+        </h2>
+        <p className="text-text5 text-design-subtext">Only on polka.</p>
+
+        <CategoryGallery />
 
         <DotsNav
           size="sm"

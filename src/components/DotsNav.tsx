@@ -8,7 +8,7 @@ export function DotsNav({ size, accessibilityCaption }: DotsNavProps) {
     <div
       className={`mt-6 flex gap-2 ${
         size === "sm" ? "md:hidden" : "hidden md:block"
-      }`}
+      } justify-center`}
     >
       {accessibilityCaption?.map((caption) => (
         <span

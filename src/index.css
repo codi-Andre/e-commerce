@@ -44,4 +44,25 @@
 }
 
 @layer utilities {
+  .overflow-x-without-bars {
+    overflow-y: hidden;
+    overflow-x: auto;
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+
+  .overflow-x-without-bars::-webkit-scrollbar {
+    display: none; /* Chrome, Safari and Opera */
+  }
+
+  .reset-overflow-x-without-bars {
+    overflow-y: initial;
+    overflow-x: initial;
+    -ms-overflow-style: initial; /* IE and Edge */
+    scrollbar-width: initial; /* Firefox */
+  }
+
+  .reset-overflow-x-without-bars::-webkit-scrollbar {
+    display: initial; /* Chrome, Safari and Opera */
+  }
 }
