@@ -14,6 +14,7 @@ import { ColorPalette } from "./ColorPalette"
 import { CommunityCard } from "./CommunityCard"
 import { DotsNav } from "./DotsNav"
 import { ProductCard } from "./ProductCard"
+import { ProductGallery } from "./ProductGallery"
 
 export function Main() {
   return (
@@ -123,11 +124,13 @@ export function Main() {
           accessibilityCaption={["slide1", "slide2", "slide3"]}
         />
       </section>
+
       <section className="container mb-6 px-4 md:mb-0 md:px-6">
         <h2 className="mb-2 text-title2">
           Find things you'll love.
           <br className="md:hidden" /> Support independent sellers.
         </h2>
+
         <p className="text-text5 text-design-subtext">Only on polka.</p>
 
         <CategoriesGallery />
@@ -135,6 +138,40 @@ export function Main() {
         <DotsNav
           hide="md"
           accessibilityCaption={["slide1", "slide2", "slide3"]}
+        />
+      </section>
+
+      <section className="container mb-6 px-4 md:px-6">
+        <div className="flex justify-between">
+          <h2 className="text-title2 md:text-title3">
+            Discover unique <br className="md:hidden" />
+            hand-picked items
+          </h2>
+
+          <button className="hidden items-center gap-2 text-text6 text-design-third md:flex">
+            <span>View all</span>
+
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              viewBox="0 0 16 16"
+              fill="none"
+            >
+              <path
+                d="M9.33325 4L13.3333 8M13.3333 8L9.33325 12M13.3333 8H3.33325"
+                stroke="#EB8426"
+                strokeLinecap="round"
+              />
+            </svg>
+          </button>
+        </div>
+
+        <ProductGallery />
+
+        <DotsNav
+          hide="lg"
+          accessibilityCaption={["slide1", "slide2", "slide3", "slide4"]}
         />
       </section>
     </main>
