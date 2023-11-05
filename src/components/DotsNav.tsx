@@ -1,24 +1,20 @@
 interface DotsNavProps {
-  size?: "sm" | "md"
+  hide?: "md" | "lg"
   accessibilityCaption?: string[]
 }
 
-export function DotsNav({ size, accessibilityCaption }: DotsNavProps) {
+export function DotsNav({ hide, accessibilityCaption }: DotsNavProps) {
   return (
     <div
-      className={`mt-6 flex gap-2 ${
-        size === "sm" ? "md:hidden" : "hidden md:block"
+      className={`flex gap-2 ${
+        hide === "md" ? "md:hidden" : "lg:hidden"
       } justify-center`}
     >
       {accessibilityCaption?.map((caption) => (
         <span
           key={caption}
           className={`
-            ${
-              size === "sm"
-                ? "p-[0.25rem] sm:hidden"
-                : "hidden p-[0.375rem] sm:block"
-            } 
+            ${hide === "md" ? "p-[0.25rem]" : "p-[0.25rem] md:p-[0.375rem]"} 
             ${
               caption === "slide2"
                 ? "border-design-third bg-design-third"

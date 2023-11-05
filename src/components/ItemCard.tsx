@@ -8,7 +8,7 @@ export function ItemCard({ figCaption, imgPath }: ItemCardProps) {
     <a href="#">
       <img
         className="h-[8.5rem] w-[8.5rem] max-w-none rounded-md p-2 
-         shadow-[0px_0px_8px_0px_rgba(0,0,0,0.15)] md:h-36 md:w-36"
+         shadow-design-2 md:h-36 md:w-36"
         src={imgPath}
         alt=""
       />

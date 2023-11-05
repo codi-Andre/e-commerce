@@ -8,8 +8,8 @@ import chairImg from "../assets/productImages/chair.png"
 import lambaderImg from "../assets/productImages/lambader.png"
 import pillow1Img from "../assets/productImages/pillow.png"
 import sofaImg from "../assets/productImages/sofa.png"
+import { CategoriesGallery } from "./CategoriesGallery"
 import { CategoryCard } from "./CategoryCard"
-import { CategoryGallery } from "./CategoryGallery"
 import { ColorPalette } from "./ColorPalette"
 import { CommunityCard } from "./CommunityCard"
 import { DotsNav } from "./DotsNav"
@@ -30,7 +30,7 @@ export function Main() {
 
       <section
         className="container mb-6 flex flex-col items-center justify-center
-       sm:flex-row sm:gap-6 md:mb-12 md:justify-between md:px-6"
+       gap-6 md:mb-12 md:flex-row md:justify-between md:px-6"
       >
         <div className="rounded-md bg-cards-1">
           <ProductCard
@@ -43,7 +43,7 @@ export function Main() {
           />
         </div>
 
-        <div className="hidden rounded-md bg-cards-2 sm:block">
+        <div className="hidden rounded-md bg-cards-2 md:block">
           <ProductCard
             imgPath={lambaderImg}
             description="Wood lamp, Floor Lamp, Lambader, Decorative"
@@ -61,7 +61,7 @@ export function Main() {
           />
         </div>
 
-        <div className="hidden rounded-md bg-cards-4 xl:block ">
+        <div className="hidden rounded-md bg-cards-4 xl:block">
           <ProductCard
             imgPath={pillow1Img}
             description="Lace Punch Needle Pillow Covers with invisible zipper, 16*16 inches"
@@ -73,14 +73,14 @@ export function Main() {
         </div>
 
         <DotsNav
-          size="sm"
+          hide="md"
           accessibilityCaption={["slide1", "slide2", "slide3", "slide4"]}
         />
       </section>
 
       <section
-        className="container mb-6 flex flex-col items-center justify-center
-      px-4 md:flex-row md:gap-6 md:px-6"
+        className="container mb-6 flex flex-col items-center justify-center gap-6
+      px-4 md:mb-12 md:flex-row md:px-6"
       >
         <CommunityCard imgPath={abstractArt1}>
           <h4 className="mb-4 text-center text-text5 md:text-text4">
@@ -119,21 +119,21 @@ export function Main() {
         </CommunityCard>
 
         <DotsNav
-          size="sm"
+          hide="md"
           accessibilityCaption={["slide1", "slide2", "slide3"]}
         />
       </section>
-      <section className="container mb-6 px-4 md:px-6">
+      <section className="container mb-6 px-4 md:mb-0 md:px-6">
         <h2 className="mb-2 text-title2">
           Find things you'll love.
           <br className="md:hidden" /> Support independent sellers.
         </h2>
         <p className="text-text5 text-design-subtext">Only on polka.</p>
 
-        <CategoryGallery />
+        <CategoriesGallery />
 
         <DotsNav
-          size="sm"
+          hide="md"
           accessibilityCaption={["slide1", "slide2", "slide3"]}
         />
       </section>

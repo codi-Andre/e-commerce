@@ -10,14 +10,14 @@ import expandLeft from "../assets/icons/expand-left.svg"
 import expandRight from "../assets/icons/expand-right.svg"
 import { ItemCard } from "./ItemCard"
 
-export function CategoryGallery() {
+export function CategoriesGallery() {
   return (
     <div
       className="overflow-x-without-bars 2xl:reset-overflow-x-without-bars relative flex
-      flex-nowrap gap-4 py-6 md:gap-6 2xl:justify-center"
+      flex-nowrap justify-between gap-4 px-2 py-6 md:gap-6 md:py-12 2xl:px-0"
     >
       <button
-        className="absolute -left-16 top-16 hidden
+        className="absolute -left-20 top-24 hidden
        rounded-full bg-design-gray-background p-2 2xl:inline-block"
       >
         <img className="h-8 w-8" src={expandLeft} alt="left arrow" />
@@ -40,7 +40,7 @@ export function CategoryGallery() {
       <ItemCard figCaption="Life Style" imgPath={lifeStyleImg} />
 
       <button
-        className="absolute -right-16 top-16 hidden rounded-full bg-design-gray-background
+        className="absolute -right-20 top-24 hidden rounded-full bg-design-gray-background
        p-2 2xl:inline-block"
       >
         <img className="h-8 w-8" src={expandRight} alt="right arrow" />

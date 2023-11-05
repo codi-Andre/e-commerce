@@ -92,6 +92,10 @@ export default {
       ]
     },
     extend: {
+      boxShadow: {
+        "design-1": "0 0 8px 0px rgba(0, 0, 0, 0.10)",
+        "design-2": "0 0 8px 0px rgba(0, 0, 0, 0.15)"
+      },
       screens: {
         "2xl": "1400px"
       },
