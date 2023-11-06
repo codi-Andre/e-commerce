@@ -8,15 +8,21 @@ import shoesImg1 from "../assets/productImages/shoes.png"
 import shoesImg2 from "../assets/productImages/shoes2.png"
 import { SmallProductCard } from "./SmallProductCard"
 
-export function ProductGallery() {
+interface ProductGalleryProps {
+  showArrows?: boolean
+}
+
+export function ProductGallery({ showArrows }: ProductGalleryProps) {
   return (
     <div
       className="overflow-x-without-bars 2xl:reset-overflow-x-without-bars relative flex
     flex-nowrap gap-4 px-2 py-6 md:gap-6 md:py-12 2xl:justify-center"
     >
       <button
-        className="absolute -left-20 top-40 hidden
-       rounded-full bg-design-gray-background p-2 2xl:inline-block"
+        className={`absolute -left-20 top-40 hidden
+       rounded-full bg-design-gray-background p-2 ${
+         showArrows ? "2xl:inline-block" : ""
+       }`}
       >
         <img className="h-8 w-8" src={expandLeft} alt="left arrow" />
       </button>
@@ -58,8 +64,8 @@ export function ProductGallery() {
       />
 
       <button
-        className="absolute -right-20 top-40 hidden rounded-full bg-design-gray-background
-       p-2 2xl:inline-block"
+        className={`absolute -right-20 top-40 hidden rounded-full bg-design-gray-background
+       p-2 ${showArrows ? "2xl:inline-block" : ""}`}
       >
         <img className="h-8 w-8" src={expandRight} alt="right arrow" />
       </button>

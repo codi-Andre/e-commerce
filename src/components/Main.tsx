@@ -5,16 +5,18 @@ import artImg from "../assets/categories-images/art.jpeg"
 import clothingImg from "../assets/categories-images/clothing.jpeg"
 import homeImg from "../assets/categories-images/home.jpeg"
 import chairImg from "../assets/productImages/chair.png"
-import lambaderImg from "../assets/productImages/lambader.png"
+import lampshadeImg from "../assets/productImages/lampshade1.png"
 import pillow1Img from "../assets/productImages/pillow.png"
 import sofaImg from "../assets/productImages/sofa.png"
 import { CategoriesGallery } from "./CategoriesGallery"
+import { CategoriesTabs } from "./CategoriesTabs"
 import { CategoryCard } from "./CategoryCard"
 import { ColorPalette } from "./ColorPalette"
 import { CommunityCard } from "./CommunityCard"
 import { DotsNav } from "./DotsNav"
 import { ProductCard } from "./ProductCard"
 import { ProductGallery } from "./ProductGallery"
+import { ProductTab } from "./ProductTab"
 
 export function Main() {
   return (
@@ -46,7 +48,7 @@ export function Main() {
 
         <div className="hidden rounded-md bg-cards-2 md:block">
           <ProductCard
-            imgPath={lambaderImg}
+            imgPath={lampshadeImg}
             description="Wood lamp, Floor Lamp, Lambader, Decorative"
             price="458,43 $"
             availableColors={<ColorPalette green blue orange pink purple />}
@@ -141,7 +143,7 @@ export function Main() {
         />
       </section>
 
-      <section className="container mb-6 px-4 md:px-6">
+      <section className="container px-4 md:px-6">
         <div className="flex justify-between">
           <h2 className="text-title2 md:text-title3">
             Discover unique <br className="md:hidden" />
@@ -167,6 +169,21 @@ export function Main() {
           </button>
         </div>
 
+        <ProductGallery showArrows />
+
+        <DotsNav
+          hide="lg"
+          accessibilityCaption={["slide1", "slide2", "slide3", "slide4"]}
+        />
+      </section>
+
+      <section className="container px-4 md:px-6">
+        <CategoriesTabs />
+
+        <ProductTab />
+      </section>
+
+      <section className="container px-4 pb-8 md:px-6 md:pb-12">
         <ProductGallery />
 
         <DotsNav
