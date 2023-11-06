@@ -12,8 +12,9 @@ export function SmallProductCard({
   price
 }: SmallProductCardProps) {
   return (
-    <div className="shadow-design-1 relative h-72 p-2">
+    <div className="relative h-72 p-2 shadow-design-1">
       <img
+        loading="lazy"
         className="mb-4 h-[11.5rem] w-[11.5rem] max-w-none"
         src={imgPath}
         alt=""

@@ -21,7 +21,12 @@ export function ProductCard({
       className="relative flex h-96 w-72 flex-col items-center gap-10 rounded-md p-6
       2xl:h-[26.125rem] 2xl:w-[19.5rem] 2xl:gap-14"
     >
-      <img className="mt-4 h-[12.5rem] w-[12.5rem]" src={imgPath} alt="" />
+      <img
+        loading="lazy"
+        className="mt-4 h-[12.5rem] w-[12.5rem]"
+        src={imgPath}
+        alt=""
+      />
 
       <a className="text-text6" href={productPage}>
         {description}
