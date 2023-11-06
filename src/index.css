@@ -22,6 +22,24 @@
     @apply border-b-4 border-design-primary pb-3;
   }
 
+  .design-list li:first-child,
+  .design-list li + li {
+    margin-right: 1.5rem;
+  }
+
+  .design-list a {
+    @apply inline-block min-w-[5rem] border-b-2 border-design-border pb-4 pt-10 text-center;
+    @apply md:min-w-[12.5rem] md:pb-8 md:pt-12 lg:w-[16.75rem] lg:pt-2 2xl:w-[12.5rem];
+    transition: 0.3s;
+  }
+
+  .design-list a:hover,
+  .design-list a:focus,
+  .design-list a:active {
+    @apply -translate-y-2 border-design-third;
+    @apply md:translate-y-0 md:pb-6;
+  }
+
   .icon {
     height: 1.5rem;
     width: 1.5rem;

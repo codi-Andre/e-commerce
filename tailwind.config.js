@@ -126,7 +126,9 @@ export default {
           2: "#FFE4BD",
           3: "#D9ABFD",
           4: "#FDF0AB",
-          5: "#FBF7D3"
+          5: "#FBF7D3",
+          6: "#FFBDBD",
+          7: "#C0ABFD"
         },
         palette: {
           green: "#7CB93E",
