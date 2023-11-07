@@ -119,7 +119,8 @@ export default {
           border: "#E9E9E9",
           background: "#FDFDFD",
           "soft-background": "#FFF9F3",
-          "gray-background": "#F5F6F8"
+          "gray-background": "#F5F6F8",
+          "news-letter": "#5959D9"
         },
         cards: {
           1: "#D3FBD9",

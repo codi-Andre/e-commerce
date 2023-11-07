@@ -30,7 +30,7 @@ export function ProductTab() {
         />
       </div>
 
-      <div className="bg-cards-6 rounded-md">
+      <div className="rounded-md bg-cards-6">
         <ProductCard
           imgPath={smartphoneImg}
           description="Iphone 12 128 GB (Red) Apple"
@@ -39,7 +39,7 @@ export function ProductTab() {
         />
       </div>
 
-      <div className="bg-cards-7 rounded-md">
+      <div className="rounded-md bg-cards-7">
         <ProductCard
           imgPath={selfCareImg2}
           description="Rovena Riva Series 6 Pcs. Wide Seating Claret Red Chair"

@@ -183,7 +183,7 @@ export function Main() {
         <ProductTab />
       </section>
 
-      <section className="container px-4 pb-8 md:px-6 md:pb-12">
+      <section className="container px-4 md:px-6">
         <ProductGallery />
 
         <DotsNav
